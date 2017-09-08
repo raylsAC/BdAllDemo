@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+    	<attr name="roundBorderWidth" format="reference|dimension">
+    	</attr>
+    	<attr name="roundBorderRadius" format="reference|dimension">
+    	</attr>
+    	<attr name="roundBorderColor" format="reference|color">
+    	</attr>
+    	<attr name="roundHoverColor" format="reference|color">
+    	</attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--<View-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:background="@color/cool_green_normal" />-->
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/refule_fragment_titlebar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:elevation="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/refule_fragment_titlebar_scan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/refule_fragment_titlebar_scan_image"-->
+        <!--android:layout_width="23dp"-->
+        <!--android:layout_height="23dp"-->
+        <!--android:src="@drawable/refule_btn_icon_scan_white" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/refule_fragment_titlebar_scan_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="加油"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/common_text_size_desc_12sp" />-->
+
+        <!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            >
+
+            <!--标题栏-->
+            <include layout="@layout/cool_title"
+                android:visibility="visible"/>
+
+            <!--选项卡-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/black"
+                app:tabTextColor="@android:color/black"
+                android:visibility="visible"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.example.zhangzhuokui.bdalldemo.view.DefaultViewPager
+            android:id="@+id/tablayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        </com.example.zhangzhuokui.bdalldemo.view.DefaultViewPager>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

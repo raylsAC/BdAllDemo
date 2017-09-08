@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/btn_snacker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.zhangzhuokui.bdalldemo.view.RoundImageView
+            xmlns:round="http://schemas.android.com/apk/res-auto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:clickable="false"
+            android:src="@drawable/beauty"
+            round:roundBorderRadius="10dp"
+            />
+
+        <com.example.zhangzhuokui.bdalldemo.view.LabelView
+            xmlns:lv="http://schemas.android.com/apk/res-auto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            lv:lv_text="Hot"
+            lv:lv_corner="10dp"
+            lv:lv_text_size="12sp"/>
+
+
+    </RelativeLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/demogif"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+</LinearLayout>

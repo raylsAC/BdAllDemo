@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.zhangzhuokui.bdalldemo.MainActivity">
+
+    <TextView
+        android:id="@+id/btn_map"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="btn_map" />
+
+    <TextView
+        android:id="@+id/btn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_location" />
+
+    <TextView
+        android:id="@+id/btn_navi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_navi" />
+
+    <TextView
+        android:id="@+id/btn_route"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_route" />
+
+    <TextView
+        android:id="@+id/btn_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_bike" />
+
+    <TextView
+        android:id="@+id/btn_label"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_label" />
+
+    <TextView
+        android:id="@+id/btn_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_toolbar" />
+
+    <TextView
+        android:id="@+id/btn_tablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:text="btn_tablayout" />
+</LinearLayout>
